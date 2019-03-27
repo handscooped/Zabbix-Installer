@@ -1,4 +1,3 @@
-#!/bin/bash
 wget https://github.com/mistermint/Zabbix-Installer/releases/download/1/zabbix-xenial.deb
 sudo dpkg -i zabbix-xenial.deb
 sudo apt-get update
