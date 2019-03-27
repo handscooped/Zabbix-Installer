@@ -6,7 +6,13 @@ sudo sh -c "openssl rand -hex 32 > /etc/zabbix/zabbix_agentd.psk"
 echo "What do you want to call this agent?"
 read agentName
 cat > /etc/zabbix/zabbix_agentd.conf << EOL
+PidFile=/var/run/zabbix/zabbix_agentd.pid
+LogFile=/var/log/zabbix/zabbix_agentd.log
+LogFileSize=0
 Server=65.50.230.94
+ServerActive=65.50.230.94
+Hostname=Zabbix server
+Include=/etc/zabbix/zabbix_agentd.d/*.conf
 TLSConnect=psk
 TLSAccept=psk
 TLSPSKIdentity=$agentName
