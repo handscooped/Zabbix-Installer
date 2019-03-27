@@ -10,7 +10,7 @@ sudo apt-get install zabbix-agent -y
 sudo sh -c "openssl rand -hex 32 > /etc/zabbix/zabbix_agentd.psk"
 
 #Ask User What To Call This Agent
-echo What do you want to call this agent?
+echo "What do you want to call this agent?"
 read agentName
 
 #Write Required Zabbix Info into agentd.conf
