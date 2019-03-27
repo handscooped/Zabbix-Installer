@@ -3,7 +3,7 @@
 #Zabbix Installation for Ubuntu 16.04
 
 #Download and unpackage Xenial (Ubuntu 16.04) Zabbix Package
-wget https://github.com/mistermint/Zabbix-Installer/blob/master/zabbix-xenial.deb
+wget https://github.com/mistermint/Zabbix-Installer/releases/download/1/zabbix-xenial.deb
 sudo dpkg -i zabbix-xenial.deb
 sudo apt-get update
 sudo apt-get install zabbix-agent -y
