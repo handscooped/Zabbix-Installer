@@ -35,5 +35,3 @@ sleep 10
 #Verify Agent is Running
 sudo systemctl status zabbix-agent
 read -p "If Zabbix Agent is running. Press enter to end installation"
-
-fi
