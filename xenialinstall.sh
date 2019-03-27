@@ -17,6 +17,7 @@ TLSConnect=psk
 TLSAccept=psk
 TLSPSKIdentity=$agentName
 TLSPSKFile=/etc/zabbix/zabbix_agentd.psk
+EOL
 
 #Start the Agent
 sudo systemctl start zabbix-agent
@@ -31,3 +32,5 @@ sleep 10
 #Verify Agent is Running
 sudo systemctl status zabbix-agent
 read -p "If Zabbix Agent is running. Press enter to end installation"
+
+fi
