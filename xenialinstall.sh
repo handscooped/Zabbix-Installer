@@ -1,5 +1,5 @@
-wget https://github.com/mistermint/Zabbix-Installer/releases/download/1/zabbix-xenial.deb
-sudo dpkg -i zabbix-xenial.deb
+wget https://repo.zabbix.com/zabbix/4.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_4.0-2+xenial_all.deb
+sudo dpkg -i zabbix-release_4.0-2+xenial_all.deb
 sudo apt-get update
 sudo apt-get install zabbix-agent -y
 sudo sh -c "openssl rand -hex 32 > /etc/zabbix/zabbix_agentd.psk"
